@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask the Audience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.2/js/materialize.min.js"></script>
+  </head>
+  <body>
+    
+    <div class="row top-top">
+      <div id="connection-count"></div>
+      <div id="status-message"></div>
+    </div>
+
+    <div class="container">
+      <div class="row center top-part">
+        <div id="current-tally"></div>
+        <div id="current-choice"></div>
+      </div>
+
+      <div class="row center">
+        <div id="choices">
+          <button class='btn'>A</button>
+          <button class='btn'>B</button>
+          <button class='btn'>C</button>
+          <button class='btn'>D</button>
+        </div>
+    </div>
+  </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
